@@ -1,0 +1,13 @@
+.para{
+background-color: darkseagreen;
+color: darkred;
+text-align: center;
+}
+.table{
+    border: 10px;
+    column-span: all;
+    padding: 40%;
+    padding-left: 30%;
+    padding-right: 30%;
+    text-align: center;
+}

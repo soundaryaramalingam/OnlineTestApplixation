@@ -1,0 +1,64 @@
+{
+  "OnlineTest": [
+    {
+      "id": "1",
+      "question": "Which One is the smallest ocean in the world",
+      "option1": "Indian",
+      "option2": "Atlantic",
+      "option3": "Arctic"
+    },
+    {
+      "id": "2",
+      "question": "Which Country Gifted the \"Statue Of Liberty\" to USA in 1886",
+      "option1": "France",
+      "option2": "Canada",
+      "option3": "Brazil"
+    },
+    {
+      "id": "3",
+      "question": "In Which Ocean Bermuda Triangle Ocean Is Located",
+      "option1": "Atlantic",
+      "option2": "Indian",
+      "option3": "Pacific"
+    }
+  ],
+  "Admin": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin@123"
+    }
+  ],
+  "User": [
+    {
+      "id": 1,
+      "username": "soundarya",
+      "email": "abc@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": 2,
+      "username": "abhijeet",
+      "email": "abhijeet@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": 3,
+      "username": "abc",
+      "email": "abc@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": 4,
+      "username": "sandeep",
+      "email": "gmail",
+      "password": "1234"
+    },
+    {
+      "id": 5,
+      "username": "ram",
+      "email": "ram@gmail.com",
+      "password": "1234"
+    }
+  ]
+}

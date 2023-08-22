@@ -1,0 +1,54 @@
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <p>ADD QUESTION</p>
+            </div>
+            <div class="card-body">
+                <form [formGroup]="addquestionform" (ngSubmit)="addquestion()">
+                    Question No :
+                <input type="text"  formControlName="id" class="form-control" />
+                <span class="errorinfo"  *ngIf="addquestionform.controls.id.touched && addquestionform.controls.id.invalid">
+                    <b>Question Id is required</b>
+                </span>
+                <br />
+                Question  :
+                <input type="text"  formControlName="question" class="form-control" />
+                <span class="errorinfo"  *ngIf="addquestionform.controls.question.touched && addquestionform.controls.question.invalid">
+                    <b>Question is required</b>
+                </span>
+                <br />
+                Choice 1:
+                <input type="text"  formControlName="option1" class="form-control" />
+                <span class="errorinfo"  *ngIf="addquestionform.controls.option1.touched && addquestionform.controls.option1.invalid">
+                    <b>Choice 1 is required</b>
+                </span>
+                <br />
+                Choice 2:
+                <input type="text"  formControlName="option2" class="form-control" />
+                <span class="errorinfo"  *ngIf="addquestionform.controls.option2.touched && addquestionform.controls.option2.invalid">
+                    <b>Choice 2 is required</b>
+                </span>
+                <br />
+                Choice 3:
+                <input type="text"  formControlName="option3" class="form-control" />
+                <span class="errorinfo"  *ngIf="addquestionform.controls.option3.touched && addquestionform.controls.option3.invalid">
+                    <b>Choice 3 is required</b>
+                </span>
+                <br />
+                <div>
+                    <input type="submit"  value="Add Question"  class="btn btn-success" />
+
+                    
+                    
+                </div>
+                <div [innerHTML]="msg">
+                    
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3"> </div>
+</div>

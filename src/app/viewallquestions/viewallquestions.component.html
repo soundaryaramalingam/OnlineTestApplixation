@@ -1,0 +1,63 @@
+<div class="row">
+                            <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div class="card">
+                            <div class="card-header">
+                              <p>QUESTIONS</p>
+                          </div>
+            <div class="card-body">
+                <table border="2px" >
+                    <tr><b>
+                       Please answer the questions and click next.</b>
+                    </tr><br>
+                    <div *ngFor="let qn of qninfo | async  ">
+                        <form  [formGroup]="usertestform">
+                        {{qn.id}} 
+                        {{qn.question}}
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" formControlName="option"  value="{{qn.option1}}">
+                            <label class="form-check-label" >
+                              {{qn.option1}}
+                            </label>
+                        </div>
+                          
+                   
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" formControlName="option"  value="{{qn.option2}}">
+                            <label class="form-check-label" >
+                              {{qn.option2}}
+                            </label>
+                          </div>
+                          
+                  
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" formControlName="option"  value="{{qn.option3}}">
+                            <label class="form-check-label" >
+                              {{qn.option3}}
+                            </label>
+                          </div>
+                       
+                            <br>
+                            <div class="p-3 mb-2 bg-success text-white" *ngIf="!btncheck">
+                              <input type="button" value="Submit answer" (click)="nextbuttonaction(qn.question)" [disabled]="usertestform.invalid"/>
+                          </div>
+                           
+                   
+                        </form>
+                       
+                    </div>
+                    <br>
+                    <br>
+                    <div class="col-md-6" *ngIf="btncheck">
+                      <input type="button" value="Submit Quiz" (click)="submitbuttonaction()" [disabled]="usertestform.invalid"/>
+                  </div>
+                   
+                </table>
+                
+             
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>
